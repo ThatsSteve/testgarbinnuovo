@@ -39,6 +39,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCv }) => {
               <img 
                 src="./logo.png" 
                 alt="Logo Dott. Franco Garbin" 
+                width={48}
+                height={48}
+                loading="lazy"
+                decoding="async"
                 className="w-11 h-11 sm:w-12 sm:h-12 rounded-full object-contain flex-shrink-0" 
               />
               <div>

@@ -11,11 +11,18 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       
       {/* Background: Doctor's Portrait - High Visibility with Minimal Dark Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="./media/Garbin0.png"
-          alt="Dott. Franco Garbin Specialista Ginecologo a Mirano"
-          className="w-full h-full object-cover object-[center_15%] sm:object-[right_25%] opacity-90 sm:opacity-95 filter contrast-[1.02] brightness-95"
-        />
+        <picture>
+          <source srcSet="./media/dott-franco-garbin-mirano.webp" type="image/webp" />
+          <img
+            src="./media/dott-franco-garbin-mirano.webp"
+            alt="Dott. Franco Garbin Specialista Ginecologo a Mirano"
+            width={1200}
+            height={900}
+            fetchPriority="high"
+            decoding="async"
+            className="w-full h-full object-cover object-[center_15%] sm:object-[right_25%] opacity-90 sm:opacity-95 filter contrast-[1.02] brightness-95"
+          />
+        </picture>
         {/* Soft targeted gradient at the bottom/left for clean text readability without hiding the doctor */}
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/50 via-40% to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/40 via-50% to-transparent sm:block hidden" />

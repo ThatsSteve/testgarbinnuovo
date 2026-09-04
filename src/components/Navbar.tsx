@@ -87,6 +87,9 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenC
             <img 
               src="./logo.png" 
               alt="Logo Dott. Franco Garbin" 
+              width={36}
+              height={36}
+              decoding="async"
               className="w-8 h-8 sm:w-9 sm:h-9 rounded-full object-contain flex-shrink-0 transition-transform group-hover:scale-105" 
             />
             <div>

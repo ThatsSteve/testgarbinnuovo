@@ -18,11 +18,18 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate }) => {
         
         {/* Background Image: foto ben visibile, alta opacità e altezza generosa */}
         <div className="absolute top-0 right-0 w-full sm:w-2/3 lg:w-[480px] xl:w-[560px] 2xl:w-[620px] h-[480px] sm:h-[540px] lg:h-full max-h-[620px] pointer-events-none z-0 overflow-hidden">
-          <img
-            src="./media/ChatGPT edit2b2.jpg"
-            alt="Studio Ginecologico Dott. Franco Garbin Mirano - Visite ed Ecografie Specialistiche"
-            className="w-full h-full object-cover object-[center_top] opacity-90 sm:opacity-95 lg:opacity-95 filter contrast-[1.03] brightness-[1.01]"
-          />
+          <picture>
+            <source srcSet="./media/dott-franco-garbin-colloquio.webp" type="image/webp" />
+            <img
+              src="./media/dott-franco-garbin-colloquio.webp"
+              alt="Studio Ginecologico Dott. Franco Garbin Mirano - Visite ed Ecografie Specialistiche"
+              width={800}
+              height={1069}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-full object-cover object-[center_top] opacity-90 sm:opacity-95 lg:opacity-95 filter contrast-[1.03] brightness-[1.01]"
+            />
+          </picture>
           {/* Sfumatura morbida alla base per integrarsi con i contenuti */}
           <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-surface-50 via-surface-50/80 to-transparent lg:hidden" />
           <div className="hidden lg:block absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-surface-50 via-surface-50/20 to-transparent" />
