@@ -50,7 +50,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCv }) => {
                   Dott. Franco Garbin
                 </div>
                 <div className="text-slate-300 text-xs mt-0.5 font-medium">
-                  Specialista in Ginecologia e Ostetricia • Ordine Medici Venezia
+                  Specialista in Ginecologia e Ostetricia • Iscrizione Ordine Medici Padova 04078 • PI: IT04724060274
                 </div>
                 <div className="text-slate-500 text-[11px] mt-0.5">
                   Già Direttore U.O.C. Ospedali di Mirano e Dolo (VE)
@@ -146,7 +146,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCv }) => {
         {/* Minimal Bottom Bar */}
         <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-500">
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
-            <span>&copy; {currentYear} Dott. Franco Garbin. Informativa sanitaria conforme alle Linee Guida FNOMCeO.</span>
+            <span>&copy; {currentYear} Dott. Franco Garbin — Iscrizione Ordine Medici Padova 04078 • PI: IT04724060274. Informativa sanitaria conforme alle Linee Guida FNOMCeO.</span>
             <div className="flex items-center gap-3 text-slate-400">
               <a
                 href="https://www.iubenda.com/privacy-policy/74969239"
