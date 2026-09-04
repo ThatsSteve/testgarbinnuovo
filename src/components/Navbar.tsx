@@ -65,7 +65,6 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenC
     { label: "Home", page: "home", icon: <HomeIcon className="w-4 h-4" /> },
     { label: "Chi Sono", page: "home", hash: "#chi-sono", icon: <User className="w-4 h-4" /> },
     { label: "Prestazioni Cliniche", page: "prestazioni", icon: <Stethoscope className="w-4 h-4" /> },
-    { label: "Studio a Mirano & Orari", page: "home", hash: "#sede-orari", icon: <MapPin className="w-4 h-4" /> },
     { label: "Prenota Ora", page: "prenota", isHighlighted: true, icon: <Calendar className="w-4 h-4" /> },
   ];
 

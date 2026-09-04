@@ -3,7 +3,6 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { AboutPhilosophy } from './components/AboutPhilosophy';
 import { ServicesBento } from './components/ServicesBento';
-import { ClinicsAndHours } from './components/ClinicsAndHours';
 import { Footer } from './components/Footer';
 import { CvModal } from './components/CvModal';
 import { BookingPage } from './pages/BookingPage';
@@ -87,9 +86,6 @@ export const App: React.FC = () => {
 
             {/* Prestazioni Cliniche Principali con Second Opinion in evidenza */}
             <ServicesBento onNavigate={handleNavigate} />
-
-            {/* Sede Ambulatorio e Orari a Mirano (Local SEO) */}
-            <ClinicsAndHours onNavigate={handleNavigate} />
           </>
         )}
 

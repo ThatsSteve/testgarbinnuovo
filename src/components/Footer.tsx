@@ -27,7 +27,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCv }) => {
   };
 
   return (
-    <footer className="bg-navy-950 text-slate-400 py-10 sm:py-12 border-t border-slate-800 text-xs">
+    <footer id="sede-orari" className="bg-navy-950 text-slate-400 py-10 sm:py-12 border-t border-slate-800 text-xs scroll-mt-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main 2-Column Grid: Info & Quick Links (Left) + Clean Map (Right) */}
@@ -50,7 +50,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCv }) => {
                   Dott. Franco Garbin
                 </div>
                 <div className="text-slate-300 text-xs mt-0.5 font-medium">
-                  Specialista in Ginecologia e Ostetricia
+                  Specialista in Ginecologia e Ostetricia • Ordine Medici Venezia
                 </div>
                 <div className="text-slate-500 text-[11px] mt-0.5">
                   Già Direttore U.O.C. Ospedali di Mirano e Dolo (VE)
@@ -58,11 +58,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCv }) => {
               </div>
             </div>
 
-            {/* Essential Contacts */}
+            {/* Essential Contacts & Local Authority */}
             <div className="space-y-2 text-xs text-slate-300">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-clinical-sky flex-shrink-0" />
-                <span>{clinicInfo.address.street} — {clinicInfo.address.city} ({clinicInfo.address.province})</span>
+                <span>{clinicInfo.address.street} — 30035 {clinicInfo.address.city} ({clinicInfo.address.province})</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-clinical-sky flex-shrink-0" />
@@ -76,6 +76,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCv }) => {
                 <a href={`mailto:${clinicInfo.email}`} className="text-slate-300 hover:text-white transition-colors">
                   {clinicInfo.email}
                 </a>
+              </div>
+              <div className="text-[11px] text-slate-400 pt-1">
+                Studio specialistico di riferimento per Mirano, Spinea, Santa Maria di Sala, Noale e Miranese.
               </div>
             </div>
 
