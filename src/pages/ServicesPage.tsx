@@ -20,8 +20,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate }) => {
         <div className="absolute top-0 right-0 w-full sm:w-2/3 lg:w-[480px] xl:w-[560px] 2xl:w-[620px] h-[480px] sm:h-[540px] lg:h-full max-h-[620px] pointer-events-none z-0 overflow-hidden">
           <img
             src="./media/ChatGPT edit2b2.jpg"
-            alt=""
-            aria-hidden="true"
+            alt="Studio Ginecologico Dott. Franco Garbin Mirano - Visite ed Ecografie Specialistiche"
             className="w-full h-full object-cover object-[center_top] opacity-90 sm:opacity-95 lg:opacity-95 filter contrast-[1.03] brightness-[1.01]"
           />
           {/* Sfumatura morbida alla base per integrarsi con i contenuti */}
@@ -43,10 +42,10 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate }) => {
           {/* Title and Booking box: positioned cleanly on surface-50 */}
           <div className="pt-[280px] sm:pt-[340px] lg:pt-0 max-w-2xl space-y-3">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-navy-900 tracking-tight leading-tight">
-              Prestazioni Mediche
+              Prestazioni Ginecologiche e Ostetriche a Mirano
             </h1>
             <p className="text-sm sm:text-base text-navy-800 font-semibold">
-              Dott. Franco Garbin — Specialista in Ginecologia e Ostetricia
+              Dott. Franco Garbin — Specialista in Ginecologia e Ostetricia a Mirano (VE)
             </p>
 
             <div className="pt-2">

@@ -17,8 +17,7 @@ export const ServicesBento: React.FC<ServicesBentoProps> = ({ onNavigate }) => {
       <div className="absolute top-0 right-0 w-full sm:w-2/3 lg:w-[480px] xl:w-[560px] 2xl:w-[620px] h-[480px] sm:h-[540px] lg:h-[620px] pointer-events-none z-0 overflow-hidden">
         <img
           src="./media/ChatGPT edit2b2.jpg"
-          alt=""
-          aria-hidden="true"
+          alt="Studio Ginecologico Dott. Franco Garbin Mirano - Visite specialistiche ed ecografie"
           className="w-full h-full object-cover object-[center_top] opacity-90 sm:opacity-95 lg:opacity-95 filter contrast-[1.03] brightness-[1.01]"
         />
         {/* Sfumatura morbida alla base per integrarsi con i contenuti */}
@@ -33,7 +32,7 @@ export const ServicesBento: React.FC<ServicesBentoProps> = ({ onNavigate }) => {
             Su mobile pt-[280px] lascia piena visibilità all'intero ritratto del medico */}
         <div className="pt-[280px] sm:pt-[340px] lg:pt-0 mb-10 sm:mb-12 pb-6 sm:pb-8 border-b border-slate-200/80 max-w-2xl">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-navy-900 tracking-tight leading-tight">
-            Prestazioni Mediche
+            Prestazioni Ginecologiche e Ostetriche a Mirano
           </h2>
 
           <p className="text-sm sm:text-base text-navy-800 font-semibold mt-1.5 sm:mt-2">

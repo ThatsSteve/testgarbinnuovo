@@ -10,38 +10,43 @@ export interface MedicalService {
 export const medicalServices: MedicalService[] = [
   {
     id: "visita-ginecologica",
-    title: "VISITA GINECOLOGICA",
-    shortDesc: "Prevenzione, diagnosi e gestione delle principali problematiche ginecologiche."
+    title: "VISITA GINECOLOGICA E CONTROLLI PERIODICI",
+    shortDesc: "Prevenzione, diagnosi precoce e gestione personalizzata delle problematiche dell'apparato genitale femminile."
   },
   {
-    id: "ostetricia",
-    title: "OSTETRICIA",
-    shortDesc: "Assistenza e valutazione della gravidanza e della salute materno-fetale."
+    id: "controllo-gravidanza-ostetricia",
+    title: "CONTROLLO GRAVIDANZA E ASSISTENZA OSTETRICA",
+    shortDesc: "Valutazione clinica specialistica della gravidanza, benessere materno-fetale e percorso nascita."
   },
   {
     id: "ecografia-ginecologica-ostetrica",
     title: "ECOGRAFIA GINECOLOGICA E OSTETRICA",
-    shortDesc: "Valutazione ecografica nell'ambito della visita e dell'inquadramento diagnostico."
+    shortDesc: "Inquadramento ecografico pelvico e transvaginale a supporto diagnostico e monitoraggio ostetrico."
+  },
+  {
+    id: "prevenzione-pap-test",
+    title: "PREVENZIONE ONCOLOGICA E PAP TEST",
+    shortDesc: "Screening citologico cervicale, Pap test ed esami di prevenzione delle patologie oncologiche genitali."
   },
   {
     id: "menopausa",
-    title: "MENOPAUSA",
-    shortDesc: "Valutazione dei disturbi della menopausa e delle possibilità terapeutiche."
+    title: "MENOPAUSA E DISTURBI DEL CLIMATERIO",
+    shortDesc: "Inquadramento clinico dei disturbi perimenopausali e postmenopausali, percorsi terapeutici personalizzati."
   },
   {
     id: "endometriosi",
-    title: "ENDOMETRIOSI",
-    shortDesc: "Inquadramento diagnostico e valutazione dei possibili percorsi terapeutici."
+    title: "ENDOMETRIOSI E DOLORE PELVICO CRONICO",
+    shortDesc: "Diagnosi clinica specialistica, ecografia di supporto e definizione della strategia terapeutica."
   },
   {
     id: "pcos",
     title: "PCOS - SINDROME DELL'OVAIO POLICISTICO",
-    shortDesc: "Valutazione della sindrome dell'ovaio policistico e delle problematiche correlate."
+    shortDesc: "Inquadramento endocrino-ginecologico, regolarizzazione del ciclo e monitoraggio clinico."
   },
   {
     id: "chirurgia-ginecologica",
-    title: "CHIRURGIA GINECOLOGICA",
-    shortDesc: "Consulenza e valutazione delle indicazioni chirurgiche e delle possibili alternative terapeutiche."
+    title: "VALUTAZIONE CHIRURGICA GINECOLOGICA",
+    shortDesc: "Consulenza specialistica su indicazioni a interventi chirurgici ginecologici e alternative conservative."
   },
   {
     id: "second-opinion",

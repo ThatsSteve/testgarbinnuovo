@@ -27,11 +27,11 @@ export const BookingPage: React.FC = () => {
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-white tracking-tight mb-3">
-            Prenota la tua Visita
+            Prenota la tua Visita Ginecologica a Mirano
           </h1>
 
           <p className="text-sm sm:text-base text-slate-300 max-w-xl mx-auto leading-relaxed">
-            Per garantire il tempo necessario all'ascolto, <strong className="text-white font-medium">le prenotazioni avvengono tramite contatto telefonico diretto</strong>.
+            Per garantire il tempo necessario all'ascolto e la massima attenzione clinica, <strong className="text-white font-medium">le prenotazioni presso lo studio di Mirano avvengono tramite contatto telefonico diretto</strong>.
           </p>
         </div>
       </section>

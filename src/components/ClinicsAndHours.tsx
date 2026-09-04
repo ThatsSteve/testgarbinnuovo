@@ -36,11 +36,11 @@ export const ClinicsAndHours: React.FC<ClinicsAndHoursProps> = ({ onNavigate }) 
             </div>
 
             <h2 className="text-2xl sm:text-4xl font-heading font-bold text-white leading-tight">
-              Ambulatorio a Mirano (VE)
+              Studio Ginecologico a Mirano: Sede e Orari
             </h2>
 
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              Le visite specialistiche si tengono presso lo studio di <strong className="text-white">Mirano (VE)</strong> in <strong className="text-white">{clinicInfo.address.street}</strong>.
+              Le visite ginecologiche, ostetriche e le ecografie si svolgono presso lo studio medico di <strong className="text-white">Mirano (VE)</strong> in <strong className="text-white">{clinicInfo.address.street}</strong>, punto di riferimento per pazienti di Mirano, Spinea, Santa Maria di Sala, Noale e dell'area del Miranese.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">

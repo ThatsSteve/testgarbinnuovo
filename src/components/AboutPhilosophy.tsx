@@ -38,17 +38,17 @@ export const AboutPhilosophy: React.FC<AboutPhilosophyProps> = ({ onOpenCv }) =>
               Esperienza clinica, ascolto e valutazione personalizzata
             </h2>
             <p className="text-sm sm:text-base text-navy-800 font-semibold mt-2">
-              Specialista in Ginecologia e Ostetricia
+              Specialista in Ginecologia e Ostetricia • Iscritto all'Ordine dei Medici Chirurghi di Venezia
             </p>
           </div>
 
           {/* Narrative Paragraphs - Distributed across the width */}
           <div className="space-y-4 text-slate-700 text-sm sm:text-base lg:text-lg leading-relaxed font-light">
             <p>
-              &ldquo;Da oltre 40 anni mi occupo di <strong>Ginecologia e Ostetricia</strong>, con una particolare esperienza nella diagnosi, nella chirurgia ginecologica e nella gestione delle problematiche della donna nelle diverse fasi della vita.&rdquo;
+              &ldquo;Da oltre 40 anni mi occupo di <strong>Ginecologia e Ostetricia</strong>, con una consolidata esperienza clinica e chirurgica maturata alla guida dei reparti ospedalieri di <strong>Mirano e Dolo</strong> nella cura e prevenzione della salute della donna in ogni fase della vita.&rdquo;
             </p>
             <p>
-              &ldquo;Oggi continuo la mia attività professionale come libero professionista, dedicando alla visita e <strong>all&rsquo;ascolto della paziente</strong> il tempo necessario per arrivare a una valutazione accurata e personalizzata.&rdquo;
+              &ldquo;Nel mio studio medico a <strong>Mirano</strong> continuo l'attività clinica come libero professionista, dedicando alla visita specialistica e <strong>all&rsquo;ascolto della paziente</strong> il tempo necessario per una diagnosi accurata, attenta e personalizzata.&rdquo;
             </p>
           </div>
 

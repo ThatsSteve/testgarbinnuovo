@@ -13,7 +13,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       <div className="absolute inset-0 z-0">
         <img
           src="./media/Garbin0.png"
-          alt="Dott. Franco Garbin - Ginecologo"
+          alt="Dott. Franco Garbin Specialista Ginecologo a Mirano"
           className="w-full h-full object-cover object-[center_15%] sm:object-[right_25%] opacity-90 sm:opacity-95 filter contrast-[1.02] brightness-95"
         />
         {/* Soft targeted gradient at the bottom/left for clean text readability without hiding the doctor */}
@@ -35,14 +35,14 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
             Già Direttore U.O.C. Ospedali di Mirano e Dolo (VE)
           </div>
 
-          {/* Short, Impactful Title */}
+          {/* Primary SEO H1 Heading */}
           <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-heading font-bold text-white leading-tight tracking-tight mb-3 drop-shadow-md">
-            Oltre 40 anni di esperienza per la salute della donna
+            Ginecologo a Mirano <span className="block text-2xl sm:text-3xl lg:text-4xl font-normal text-slate-200 mt-1">Dott. Franco Garbin</span>
           </h1>
 
-          {/* Concise Doctor Description */}
+          {/* Concise Doctor Description with Local Keywords & E-E-A-T */}
           <p className="text-sm sm:text-base text-slate-200 leading-relaxed mb-6 font-light max-w-lg drop-shadow">
-            Ascolto, diagnosi accurata e percorsi personalizzati. Visite ginecologiche, ostetricia, ecografia e consulenze di <strong className="text-white font-medium">Second Opinion</strong> a Mirano (VE).
+            Oltre 40 anni di esperienza per la salute della donna. Visite ginecologiche, ecografie ostetriche, prevenzione e consulenze di <strong className="text-white font-medium">Second Opinion</strong> a Mirano (VE).
           </p>
 
           {/* Unified Single CTA - Enlarged & High Impact */}
