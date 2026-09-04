@@ -1,4 +1,4 @@
-﻿import { execSync } from 'child_process';
+import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -20,9 +20,26 @@ if (!fs.existsSync(nojekyllPath)) fs.writeFileSync(nojekyllPath, '');
 console.log('📦 Compilazione bundle Vite...');
 execSync('npm run build', { cwd: rootDir, stdio: 'inherit' });
 
-// 3. Copia 404.html e .nojekyll in dist
+// 3. Copia 404.html, .nojekyll e genera route statiche per prenota e prestazioni
 fs.copyFileSync(path.join(distDir, 'index.html'), path.join(distDir, '404.html'));
 fs.writeFileSync(path.join(distDir, '.nojekyll'), '');
+
+// Route statiche per 200 OK su GitHub Pages
+fs.mkdirSync(path.join(distDir, 'prenota'), { recursive: true });
+fs.copyFileSync(path.join(distDir, 'index.html'), path.join(distDir, 'prenota', 'index.html'));
+fs.copyFileSync(path.join(distDir, 'index.html'), path.join(distDir, 'prenota.html'));
+
+fs.mkdirSync(path.join(distDir, 'prestazioni'), { recursive: true });
+fs.copyFileSync(path.join(distDir, 'index.html'), path.join(distDir, 'prestazioni', 'index.html'));
+fs.copyFileSync(path.join(distDir, 'index.html'), path.join(distDir, 'prestazioni.html'));
+
+// Assicura la presenza di sitemap.xml e robots.txt
+if (fs.existsSync(path.join(rootDir, 'public', 'sitemap.xml'))) {
+  fs.copyFileSync(path.join(rootDir, 'public', 'sitemap.xml'), path.join(distDir, 'sitemap.xml'));
+}
+if (fs.existsSync(path.join(rootDir, 'public', 'robots.txt'))) {
+  fs.copyFileSync(path.join(rootDir, 'public', 'robots.txt'), path.join(distDir, 'robots.txt'));
+}
 
 // 4. Inizializza temporaneamente git in dist e invia a francogarbin main
 console.log('📤 Invio del bundle compilato al branch main di francogarbin...');

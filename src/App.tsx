@@ -24,13 +24,14 @@ export const App: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Sync route with window.location.hash
+  // Sync route with window.location.hash and pathname
   useEffect(() => {
-    const handleHashChange = () => {
+    const handleRouteChange = () => {
       const hash = window.location.hash;
-      if (hash.startsWith('#/prenota') || hash.startsWith('#prenota')) {
+      const path = window.location.pathname.toLowerCase();
+      if (path.includes('prenota') || hash.startsWith('#/prenota') || hash.startsWith('#prenota')) {
         setCurrentPage('prenota');
-      } else if (hash.startsWith('#/prestazioni') || hash.startsWith('#prestazioni')) {
+      } else if (path.includes('prestazioni') || hash.startsWith('#/prestazioni') || hash.startsWith('#prestazioni')) {
         setCurrentPage('prestazioni');
       } else {
         setCurrentPage('home');
@@ -38,10 +39,14 @@ export const App: React.FC = () => {
     };
 
     // Initial check
-    handleHashChange();
+    handleRouteChange();
 
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    window.addEventListener('hashchange', handleRouteChange);
+    window.addEventListener('popstate', handleRouteChange);
+    return () => {
+      window.removeEventListener('hashchange', handleRouteChange);
+      window.removeEventListener('popstate', handleRouteChange);
+    };
   }, []);
 
   const handleNavigate = (page: string) => {
